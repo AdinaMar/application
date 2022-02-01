@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/Routes.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1643718669713,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1643724854637,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,12 +12,9 @@\n name:\"Contact\",\r\n route:\"/contact\"\r\n }, \r\n  \r\n-{\r\n-    name :\"Contact Us\",\r\n-    route:\"/contact\"\r\n-}\r\n \r\n+\r\n ]\r\n \r\n export default Routes;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1643725710885,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,13 +5,13 @@\n         route:\"/\"\r\n     },\r\n {\r\n     name: \"About\",\r\n-    route: \"/about\"\r\n+    route: \"/About\"\r\n },\r\n {\r\n name:\"Contact\",\r\n-route:\"/contact\"\r\n+route:\"/Contact\"\r\n }, \r\n  \r\n \r\n \r\n"
+                }
+            ],
+            "date": 1643718669711,
+            "name": "Commit-0",
+            "content": "const Routes = [\r\n \r\n    {\r\n        name:\"Home\",\r\n        route:\"/\"\r\n    },\r\n{\r\n    name: \"About\",\r\n    route: \"/about\"\r\n},\r\n{\r\nname:\"Contact\",\r\nroute:\"/contact\"\r\n}, \r\n \r\n{\r\n    name :\"Contact Us\",\r\n    route:\"/contact\"\r\n}\r\n\r\n]\r\n\r\nexport default Routes;"
+        }
+    ]
+}

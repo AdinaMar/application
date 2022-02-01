@@ -1,0 +1,70 @@
+{
+    "sourceFile": "src/Navbar.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 13,
+            "patches": [
+                {
+                    "date": 1643721077224,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1643724672921,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n .navbar {\r\n-  height: 100%;\r\n+  height: 300%;\r\n   width: 230px;\r\n   background-color: #347ab4;\r\n   top: 0;\r\n   left: 0;\r\n"
+                },
+                {
+                    "date": 1643724689948,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n .navbar {\r\n-  height: 300%;\r\n+  height: 500%;\r\n   width: 230px;\r\n   background-color: #347ab4;\r\n   top: 0;\r\n   left: 0;\r\n"
+                },
+                {
+                    "date": 1643725433110,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n .navbar {\r\n-  height: 500%;\r\n+  height: 100%;\r\n   width: 230px;\r\n   background-color: #347ab4;\r\n   top: 0;\r\n   left: 0;\r\n"
+                },
+                {
+                    "date": 1643725480144,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,5 +3,6 @@\n   width: 230px;\r\n   background-color: #347ab4;\r\n   top: 0;\r\n   left: 0;\r\n+  text-decoration-color: #fff;\r\n }\r\n"
+                },
+                {
+                    "date": 1643725746727,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n .navbar {\r\n   height: 100%;\r\n-  width: 230px;\r\n+  width: 200px;\r\n   background-color: #347ab4;\r\n   top: 0;\r\n   left: 0;\r\n   text-decoration-color: #fff;\r\n"
+                },
+                {
+                    "date": 1643725848298,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,4 +5,8 @@\n   top: 0;\r\n   left: 0;\r\n   text-decoration-color: #fff;\r\n }\r\n+\r\n+.navitem {\r\n+  color: #fff;\r\n+}\r\n"
+                },
+                {
+                    "date": 1643725887177,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,4 +9,8 @@\n \r\n .navitem {\r\n   color: #fff;\r\n }\r\n+\r\n+.navlink {\r\n+  color: #fff;\r\n+}\r\n"
+                },
+                {
+                    "date": 1643725896031,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,11 +6,7 @@\n   left: 0;\r\n   text-decoration-color: #fff;\r\n }\r\n \r\n-.navitem {\r\n-  color: #fff;\r\n-}\r\n-\r\n .navlink {\r\n   color: #fff;\r\n }\r\n"
+                },
+                {
+                    "date": 1643725948734,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,5 @@\n .navbar {\r\n-  height: 100%;\r\n-  width: 200px;\r\n   background-color: #347ab4;\r\n   top: 0;\r\n   left: 0;\r\n   text-decoration-color: #fff;\r\n"
+                },
+                {
+                    "date": 1643726051164,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n .navbar {\r\n+  width: 230px;\r\n   background-color: #347ab4;\r\n   top: 0;\r\n   left: 0;\r\n   text-decoration-color: #fff;\r\n"
+                },
+                {
+                    "date": 1643726112409,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n .navbar {\r\n   width: 230px;\r\n+  height: 100%;\r\n   background-color: #347ab4;\r\n   top: 0;\r\n   left: 0;\r\n   text-decoration-color: #fff;\r\n"
+                },
+                {
+                    "date": 1643726145563,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,5 +8,6 @@\n }\r\n \r\n .navlink {\r\n   color: #fff;\r\n+  height: 100%;\r\n }\r\n"
+                },
+                {
+                    "date": 1643726219702,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,11 @@\n   top: 0;\r\n   left: 0;\r\n   text-decoration-color: #fff;\r\n }\r\n-\r\n+.heade {\r\n+  height: 100%;\r\n+}\r\n .navlink {\r\n   color: #fff;\r\n   height: 100%;\r\n }\r\n"
+                }
+            ],
+            "date": 1643721077210,
+            "name": "Commit-0",
+            "content": ".navbar {\r\n  height: 100%;\r\n  width: 230px;\r\n  background-color: #347ab4;\r\n  top: 0;\r\n  left: 0;\r\n}\r\n"
+        }
+    ]
+}

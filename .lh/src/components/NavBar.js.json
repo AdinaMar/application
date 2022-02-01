@@ -1,0 +1,66 @@
+{
+    "sourceFile": "src/components/NavBar.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 12,
+            "patches": [
+                {
+                    "date": 1643719366934,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1643719890825,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,10 @@\n import React, {useState} from 'react';\r\n import {Link} from 'react-router-dom';\r\n-import Routes from '../routes/Routes.js';\r\n+import Routes from '../Routes.js';\r\n+import Home from './Home/Home.js';\r\n+import About from './About/About.js';\r\n+import Contact from './Contact/Contact.js';\r\n \r\n const NavBar = () => {\r\n \r\n     console.log(Routes);\r\n"
+                },
+                {
+                    "date": 1643721181095,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n import {Link} from 'react-router-dom';\r\n import Routes from '../Routes.js';\r\n import Home from './Home/Home.js';\r\n import About from './About/About.js';\r\n+import '../Navbar.css';\r\n import Contact from './Contact/Contact.js';\r\n \r\n const NavBar = () => {\r\n \r\n"
+                },
+                {
+                    "date": 1643721236850,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,10 +9,10 @@\n const NavBar = () => {\r\n \r\n     console.log(Routes);\r\n     const[click, setClick] = useState(false);\r\n-    const handleClick = () => setClick(!click);\r\n     \r\n+    \r\n     return (\r\n         <header>\r\n <nav className=\"navbar\">\r\n    \r\n"
+                },
+                {
+                    "date": 1643721547816,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n import {Link} from 'react-router-dom';\r\n import Routes from '../Routes.js';\r\n import Home from './Home/Home.js';\r\n import About from './About/About.js';\r\n+import logo from './images/logo2.png';\r\n import '../Navbar.css';\r\n import Contact from './Contact/Contact.js';\r\n \r\n const NavBar = () => {\r\n@@ -14,8 +15,11 @@\n     \r\n     return (\r\n         <header>\r\n <nav className=\"navbar\">\r\n+<div className=\"logo\">\r\n+        <img src={logo} alt=\"\"></img>\r\n+    </div>\r\n    \r\n     <ul className={click ? \"nav-menu active\" : \"nav-menu\"}>\r\n       \r\n         {Routes.map((data,index)=>{\r\n"
+                },
+                {
+                    "date": 1643722288538,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import {Link} from 'react-router-dom';\r\n import Routes from '../Routes.js';\r\n import Home from './Home/Home.js';\r\n import About from './About/About.js';\r\n-import logo from './images/logo2.png';\r\n+import logo from '../images/logo2.png';\r\n import '../Navbar.css';\r\n import Contact from './Contact/Contact.js';\r\n \r\n const NavBar = () => {\r\n"
+                },
+                {
+                    "date": 1643722543443,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,15 @@\n import Contact from './Contact/Contact.js';\r\n \r\n const NavBar = () => {\r\n \r\n+    <div>\r\n+        <NavBar />\r\n+        <Home />\r\n+        <About />\r\n+        <Contact />\r\n+        </div>\r\n+        \r\n     console.log(Routes);\r\n     const[click, setClick] = useState(false);\r\n     \r\n     \r\n"
+                },
+                {
+                    "date": 1643725194414,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,14 +26,14 @@\n <div className=\"logo\">\r\n         <img src={logo} alt=\"\"></img>\r\n     </div>\r\n    \r\n-    <ul className={click ? \"nav-menu active\" : \"nav-menu\"}>\r\n+    <ul className={click ? \"navmenu active\" : \"navmenu\"}>\r\n       \r\n         {Routes.map((data,index)=>{\r\n             return(\r\n-                <li className='nav-item' key={index}> \r\n-                    <Link to={data.route} className=\"nav-link\">{data.name}</Link>\r\n+                <li className='navitem' key={index}> \r\n+                    <Link to={data.route} className=\"navlink\">{data.name}</Link>\r\n                 </li>\r\n             )\r\n         })}\r\n     </ul>\r\n"
+                },
+                {
+                    "date": 1643725524075,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,18 +26,18 @@\n <div className=\"logo\">\r\n         <img src={logo} alt=\"\"></img>\r\n     </div>\r\n    \r\n-    <ul className={click ? \"navmenu active\" : \"navmenu\"}>\r\n+    \r\n       \r\n         {Routes.map((data,index)=>{\r\n             return(\r\n                 <li className='navitem' key={index}> \r\n                     <Link to={data.route} className=\"navlink\">{data.name}</Link>\r\n                 </li>\r\n             )\r\n         })}\r\n-    </ul>\r\n+    \r\n    </nav>\r\n     </header>\r\n \r\n     )\r\n"
+                },
+                {
+                    "date": 1643725786548,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,15 +8,15 @@\n import Contact from './Contact/Contact.js';\r\n \r\n const NavBar = () => {\r\n \r\n-    <div>\r\n-        <NavBar />\r\n+    <>\r\n+        \r\n         <Home />\r\n         <About />\r\n         <Contact />\r\n-        </div>\r\n         \r\n+        </>\r\n     console.log(Routes);\r\n     const[click, setClick] = useState(false);\r\n     \r\n     \r\n"
+                },
+                {
+                    "date": 1643725822904,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,12 +15,11 @@\n         <About />\r\n         <Contact />\r\n         \r\n         </>\r\n-    console.log(Routes);\r\n-    const[click, setClick] = useState(false);\r\n     \r\n     \r\n+    \r\n     return (\r\n         <header>\r\n <nav className=\"navbar\">\r\n <div className=\"logo\">\r\n"
+                },
+                {
+                    "date": 1643726200795,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n     \r\n     \r\n     \r\n     return (\r\n-        <header>\r\n+        <header className=\"header\">\r\n <nav className=\"navbar\">\r\n <div className=\"logo\">\r\n         <img src={logo} alt=\"\"></img>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1643726208464,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n     \r\n     \r\n     \r\n     return (\r\n-        <header className=\"header\">\r\n+        <header className=\"heade\">\r\n <nav className=\"navbar\">\r\n <div className=\"logo\">\r\n         <img src={logo} alt=\"\"></img>\r\n     </div>\r\n"
+                }
+            ],
+            "date": 1643719366934,
+            "name": "Commit-0",
+            "content": "import React, {useState} from 'react';\r\nimport {Link} from 'react-router-dom';\r\nimport Routes from '../routes/Routes.js';\r\n\r\nconst NavBar = () => {\r\n\r\n    console.log(Routes);\r\n    const[click, setClick] = useState(false);\r\n    const handleClick = () => setClick(!click);\r\n    \r\n    return (\r\n        <header>\r\n<nav className=\"navbar\">\r\n   \r\n    <ul className={click ? \"nav-menu active\" : \"nav-menu\"}>\r\n      \r\n        {Routes.map((data,index)=>{\r\n            return(\r\n                <li className='nav-item' key={index}> \r\n                    <Link to={data.route} className=\"nav-link\">{data.name}</Link>\r\n                </li>\r\n            )\r\n        })}\r\n    </ul>\r\n   </nav>\r\n    </header>\r\n\r\n    )\r\n    }\r\n\r\n    export default NavBar;"
+        }
+    ]
+}

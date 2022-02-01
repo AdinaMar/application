@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/components/About/About.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1643719023481,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1643720102302,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n const About = () =>{\r\n     return (\r\n         <div>\r\n-   ciao\r\n+   You are currently on the About Page :)\r\n         </div>\r\n     )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1643720732944,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n const About = () =>{\r\n     return (\r\n         <div>\r\n-   You are currently on the About Page :)\r\n+   You are currently on the About Page\r\n         </div>\r\n     )\r\n }\r\n \r\n"
+                }
+            ],
+            "date": 1643719023481,
+            "name": "Commit-0",
+            "content": "import react from 'react';\r\n\r\nconst About = () =>{\r\n    return (\r\n        <div>\r\n   ciao\r\n        </div>\r\n    )\r\n}\r\n\r\nexport default About;\r\n"
+        }
+    ]
+}

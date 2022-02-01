@@ -1,0 +1,42 @@
+{
+    "sourceFile": "src/App.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 6,
+            "patches": [
+                {
+                    "date": 1643717881314,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1643718297223,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n-\n+import React from 'react';\n+import { Routes, Route} from 'react-router-dom';\n import './App.css';\n \n function App() {\n   return (\n"
+                },
+                {
+                    "date": 1643719613801,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,20 @@\n import React from 'react';\n import { Routes, Route} from 'react-router-dom';\n+import Home from './components/Home/Home';\n+import About from './components/About/About';\n+import Contact from './components/Contact/Contact';\n import './App.css';\n \n function App() {\n   return (\n-    <div className=\"App\">\n-      <h1>hi</h1>\n-    </div>\n+    <Routes>\n+      <Route path=\"/\" element={<Home />}></Route>\n+      \n+   <Route path=\"/about\" element={<About />}/>\n+\n+   <Route path=\"/contact\" element= {<Contact />} />\n+    </Routes>\n   );\n }\n \n export default App;\n"
+                },
+                {
+                    "date": 1643722466845,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,19 +2,22 @@\n import { Routes, Route} from 'react-router-dom';\n import Home from './components/Home/Home';\n import About from './components/About/About';\n import Contact from './components/Contact/Contact';\n+import NavBar from './components/NavBar';\n import './App.css';\n \n function App() {\n   return (\n+<NavBar>\n     <Routes>\n       <Route path=\"/\" element={<Home />}></Route>\n       \n    <Route path=\"/about\" element={<About />}/>\n \n    <Route path=\"/contact\" element= {<Contact />} />\n     </Routes>\n+    </NavBar>\n   );\n }\n \n export default App;\n"
+                },
+                {
+                    "date": 1643725290292,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,11 +11,11 @@\n <NavBar>\n     <Routes>\n       <Route path=\"/\" element={<Home />}></Route>\n       \n-   <Route path=\"/about\" element={<About />}/>\n+   <Route path=\"/about\" element={<About />}></Route>\n \n-   <Route path=\"/contact\" element= {<Contact />} />\n+   <Route path=\"/contact\" element= {<Contact />}></Route>\n     </Routes>\n     </NavBar>\n   );\n }\n"
+                },
+                {
+                    "date": 1643725393247,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,11 +11,11 @@\n <NavBar>\n     <Routes>\n       <Route path=\"/\" element={<Home />}></Route>\n       \n-   <Route path=\"/about\" element={<About />}></Route>\n+   <Route path=\"/About\" element={<About />}></Route>\n \n-   <Route path=\"/contact\" element= {<Contact />}></Route>\n+   <Route path=\"/Contact\" element= {<Contact />}></Route>\n     </Routes>\n     </NavBar>\n   );\n }\n"
+                },
+                {
+                    "date": 1643725634935,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n function App() {\n   return (\n <NavBar>\n     <Routes>\n-      <Route path=\"/\" element={<Home />}></Route>\n+    <Route path=\"/\" element={<Home />}></Route>\n       \n    <Route path=\"/About\" element={<About />}></Route>\n \n    <Route path=\"/Contact\" element= {<Contact />}></Route>\n"
+                }
+            ],
+            "date": 1643717881314,
+            "name": "Commit-0",
+            "content": "\nimport './App.css';\n\nfunction App() {\n  return (\n    <div className=\"App\">\n      <h1>hi</h1>\n    </div>\n  );\n}\n\nexport default App;\n"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+.navbar {
+  width: 230px;
+  height: 100%;
+  background-color: #347ab4;
+  top: 0;
+  left: 0;
+  text-decoration-color: #fff;
+}
+
+.navlink {
+  color: #fff;
+}

@@ -1,0 +1,42 @@
+{
+    "sourceFile": "src/components/Home/Home.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 6,
+            "patches": [
+                {
+                    "date": 1643718999681,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1643719840833,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,18 @@\n import react from 'react';\r\n+import NavBar from '../NavBar';\r\n+import About from '../About/About';\r\n+import Contact from '../Contact/Contact';\r\n \r\n const Home = () =>{\r\n     return (\r\n         <div>\r\n-   ciao\r\n+        <NavBar />\r\n+        <Home />\r\n+        <About />\r\n+        <Contact />\r\n         </div>\r\n+       \r\n     )\r\n }\r\n \r\n export default Home;\r\n"
+                },
+                {
+                    "date": 1643722734984,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,18 +1,14 @@\n import react from 'react';\r\n import NavBar from '../NavBar';\r\n import About from '../About/About';\r\n import Contact from '../Contact/Contact';\r\n+import Cards from '../cards/Cards';\r\n \r\n const Home = () =>{\r\n     return (\r\n-        <div>\r\n-        <NavBar />\r\n-        <Home />\r\n-        <About />\r\n-        <Contact />\r\n-        </div>\r\n-       \r\n+        \r\n+       <Cards />\r\n     )\r\n }\r\n \r\n export default Home;\r\n"
+                },
+                {
+                    "date": 1643722913917,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,11 @@\n \r\n const Home = () =>{\r\n     return (\r\n         \r\n-       <Cards />\r\n+       <Cards />,\r\n+      <Cards />,\r\n+      <Cards />\r\n     )\r\n }\r\n \r\n export default Home;\r\n"
+                },
+                {
+                    "date": 1643723545426,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,11 +6,11 @@\n \r\n const Home = () =>{\r\n     return (\r\n         \r\n-       <Cards />,\r\n-      <Cards />,\r\n-      <Cards />\r\n+       <Cards title={title} image={image} description={description} date={date} />,\r\n+      <Cards title={title} image={image} description={description} date={date}/>,\r\n+      <Cards title={title} image={image} description={description} date={date}/>\r\n     )\r\n }\r\n \r\n export default Home;\r\n"
+                },
+                {
+                    "date": 1643724146640,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,11 +6,11 @@\n \r\n const Home = () =>{\r\n     return (\r\n         \r\n-       <Cards title={title} image={image} description={description} date={date} />,\r\n-      <Cards title={title} image={image} description={description} date={date}/>,\r\n-      <Cards title={title} image={image} description={description} date={date}/>\r\n+       <Cards title />,\r\n+      <Cards title/>,\r\n+      <Cards title/>\r\n     )\r\n }\r\n \r\n export default Home;\r\n"
+                },
+                {
+                    "date": 1643726408064,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,11 +6,11 @@\n \r\n const Home = () =>{\r\n     return (\r\n         \r\n-       <Cards title />,\r\n-      <Cards title/>,\r\n-      <Cards title/>\r\n+       <Cards  />,\r\n+    <Cards />,\r\n+      <Cards />\r\n     )\r\n }\r\n \r\n export default Home;\r\n"
+                }
+            ],
+            "date": 1643718999681,
+            "name": "Commit-0",
+            "content": "import react from 'react';\r\n\r\nconst Home = () =>{\r\n    return (\r\n        <div>\r\n   ciao\r\n        </div>\r\n    )\r\n}\r\n\r\nexport default Home;\r\n"
+        }
+    ]
+}
